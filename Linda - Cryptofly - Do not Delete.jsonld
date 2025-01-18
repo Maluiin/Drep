@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Linda - Cryptofly",
+    "motivations": "I have been involved in shaping and maintaining the Cardano ecosystem since 2021. As an SPO, I have had my finger on the pulse since I began my time here.\nCardano has become home for me. I care deeply for those who share it with me. I have developed personal connections with many within the community and I feel that I can use my voice for good to ensure that they are heard.",
+    "objectives": "Fair and well-balanced governance based on the good of the community.\nCardano has the opportunity to avoid the pitfalls of legacy systems by being able to bring the voice of the people to any discussion.",
+    "paymentAddress": "addr1q8uqcjmtc93qmxnckt2kp8dcenrmhkk0dk5erhutkhrta2tkecgp3h3zjvsye2ztzdxs82kzkwahphy6nnp3kt9k8jwqfxs3vq",
+    "qualifications": "Stake Pool Operator - MALU Pool\nDeFi consultant.\nEngineering Degree focusing on AI, Robotics, Optimisation, Supply Chain Logistics and Management.\nDirect personal connections to IOG, CF and most projects.\nCommittee member and advisor to multiple Cardano projects.\nContent Creator with a large platform.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Label",
+        "uri": "https://x.com/Cryptofly777"
+      }
+    ]
+  }
+}
