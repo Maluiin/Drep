@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "There are 2 reasons why I am voting “Yes” on this proposal:\n1. We need to establish a net change limit to be able to conduct withdrawals from the treasury. Without a net change limit in place, all requests would be unconstitutional and therefore invalid.\n\n2. While I feel that IOG’s estimates for treasury inflows based on 2024 figures are optimistic, a realistic 300M ADA is closer to the actual amount that we will see come into the treasury.\nA 350M NCL will still be mostly covered by the inflows and will protect the remainder of the treasury.\n\nI do not feel that we need to continue growing the treasury, and that we should aim to use a reasonable portion to grow the Cardano ecosystem. Further growth in the ecosystem will increase transactions and, in turn, increase inflows to the treasury.\n\nAn NCL is just a maximum amount that can be withdrawn from the treasury. This does not mean that the entire amount will be withdrawn. All budget proposals to access this 350M ADA will be subject to scrutiny from dReps, SPOs, and the Cardano community."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
